@@ -8,7 +8,7 @@ def q1(x):
     for i in range(len(matrixA)): 
         for j in range(len(matrixB[0])): 
             for k in range(len(matrixB)):
-                res[i][j] += matrixA[i][k] * matrixB[k][j] 
+                res[i][j] += matrixA[i][k] * matrixB[k][j]  
     dt1 = datetime.now() - t0
     t0 = datetime.now()
     matrixA.dot(matrixB)

@@ -4,7 +4,7 @@ from scipy.signal import convolve2d
 from PIL import Image
 Hx = [[1,0,-1],[2,0,-2],[1,0,-1]]
 Hy = [[1,2,1],[0,0,0],[-1,-2,-1]]
-image = Image.open("lena.png")
+image = image
 ImageArr = np.array(image)
 grayImageArr = ImageArr.mean(axis=2)
 Gx = convolve2d(Hx,grayImageArr)
